@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Phudu:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 1800px;
+    margin: 0 auto;
+    background-color: #221A37;
+}
