@@ -1,7 +1,7 @@
 import Content from "@/components/Content/Content";
 import "./global.css";
 
-export default function RootLayout({
+export default function RootTemplate({
   children,
 }: {
   children: React.ReactNode;

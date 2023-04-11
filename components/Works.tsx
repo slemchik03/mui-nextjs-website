@@ -5,7 +5,6 @@ import { Box, Grid, Typography } from "@mui/material";
 import { FC } from "react";
 import WorkItem from "./WorkItem";
 
-
 const Works: FC = () => {
   return (
     <Box textAlign="center" sx={{ flexGrow: 1 }}>
@@ -13,11 +12,9 @@ const Works: FC = () => {
         Here is piece of my gihub repo:
       </Typography>
       <Grid container gap="40px" justifyContent="center">
-          {
-            myWorksList.map((work) => (
-              <WorkItem {...work} />
-            ))
-          }
+        {myWorksList.map((work, idx) => (
+          <WorkItem key={idx} {...work} />
+        ))}
       </Grid>
     </Box>
   );

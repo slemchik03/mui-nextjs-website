@@ -1,17 +1,15 @@
-import { Grid, styled, Typography, TypographyProps } from "@mui/material";
+import { styled, Typography, TypographyProps } from "@mui/material";
 import { Stack } from "@mui/system";
 import { FC } from "react";
 
-interface AboutTypographyProps extends TypographyProps {}
-
-const AboutDescribeTypography = styled((props: AboutTypographyProps) => (
+const AboutDescribeTypography = styled((props: TypographyProps) => (
   <Typography {...props} />
 ))(() => ({
   fontWeight: 700,
   color: "#C0C0C0",
 }));
 
-const AboutTitleTypography = styled((props: AboutTypographyProps) => (
+const AboutTitleTypography = styled((props: TypographyProps) => (
   <Typography {...props} />
 ))(() => ({
   fontWeight: 700,
@@ -20,7 +18,7 @@ const AboutTitleTypography = styled((props: AboutTypographyProps) => (
   lineHeight: "51px",
 }));
 
-const AboutUpTitleTypography = styled((props: AboutTypographyProps) => (
+const AboutUpTitleTypography = styled((props: TypographyProps) => (
   <Typography {...props} />
 ))(() => ({
   color: "#5D3974",
@@ -29,7 +27,7 @@ const AboutUpTitleTypography = styled((props: AboutTypographyProps) => (
   lineHeight: "20px",
 }));
 
-const AboutDownTitleTypography = styled((props: AboutTypographyProps) => (
+const AboutDownTitleTypography = styled((props: TypographyProps) => (
   <Typography {...props} />
 ))(() => ({
   fontWeight: 700,
@@ -42,9 +40,9 @@ const About: FC = () => {
   return (
     <Stack
       fontFamily="'Roboto', sans-serif"
-      sx={{zIndex: "2", width: "100%"}}
+      sx={{ zIndex: "2", width: "100%" }}
     >
-      <Stack  direction="column">
+      <Stack direction="column">
         <AboutUpTitleTypography>Chef</AboutUpTitleTypography>
         <AboutTitleTypography>Front-end Developer</AboutTitleTypography>
         <AboutDownTitleTypography>
@@ -65,7 +63,7 @@ const About: FC = () => {
           designing seamless websites, no challenge is too great for them to
           tackle.
         </AboutDescribeTypography>
-        <AboutDescribeTypography >
+        <AboutDescribeTypography>
           With a deep understanding of the mystical arts of tech and design,
           always on the cutting-edge, seeking out new ways to improve and
           evolve. Join them on their journey to make a lasting impact on the

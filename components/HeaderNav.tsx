@@ -96,6 +96,7 @@ const HeaderNav: FC<IProps> = ({ position, handleChange }) => {
       handleChange(navigationLinksInfo.indexOf(currentLink));
     }
   }, []);
+  
   return (
     <>
       <StyledTabs

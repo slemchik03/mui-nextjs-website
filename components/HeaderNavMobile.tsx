@@ -30,12 +30,11 @@ const HeaderNavButton = styled(
         bgcolor: !isActive ? "transparent" : "#541B54",
       }}
       {...props}
-      children={
-        <Link style={{ color: "white", textDecoration: "none" }} href={href}>
-          {children}
-        </Link>
-      }
-    />
+    >
+      <Link style={{ color: "white", textDecoration: "none" }} href={href}>
+        {children}
+      </Link>
+    </Button>
   )
 )(() => ({}));
 
